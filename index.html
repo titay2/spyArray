@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Cats</title>
+    <link rel="stylesheet" href="main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+</head>
+<body >
+
+
+<div id="images-container">
+
+    <a href = "#" id="view" class = "btn btn-primary"  role = "button"  >
+        view
+    </a>
+
+    <a href = "#" id="add" class = "btn btn-primary"  role = "button"  >
+        add
+    </a>
+    <div id="image_list" class="row">
+
+    </div>
+
+    <a href = "#" id="wife" class = "btn btn-primary"  role = "button"  >
+        Wife
+    </a>
+
+    <a href = "#" id="gfriend" class = "btn btn-primary"  role = "button"  >
+        G.friend
+    </a>
+
+    <div id="image_catagory" class="row">
+
+    </div>
+    <div class="modal fade" id="myModal"tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="imageTitle"></h4>
+                </div>
+                <div class="modal-body">
+                    <img id ="imageId" >
+                    <div id="map" onload="initMap()"></div>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+</div>
+
+<section id="create-container" class="row">
+
+    <div class="container">
+
+        <form id="add-form" class="form-group">
+           <h3 class="text-center" >New spyArray</h3>
+            <div class="control-group">
+                <label >Category</label>
+                <input id="newCategory" placeholder="Enter category" >
+            </div>
+            <div class="control-group">
+                <label >Title</label>
+                <input id="newTitle" placeholder="Enter Title">
+            </div>
+            <div class="control-group">
+                <label>Description</label>
+                <textarea class="form-control" id="newDescription" rows="2"></textarea>
+            </div>
+            <div class="control-group">
+                <label >Upload image</label>
+                <input type="file" class="form-control-file" id="newImage" aria-describedby="fileHelp">
+            </div>
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button class="btn btn-primary" id="cancelForm">Cancel</button>
+        </form>
+
+    </div>
+
+</section>
+
+
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBJXl6z8XXZrvpQV8DcIrcN_YSak2DTtzQ">
+</script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
+
